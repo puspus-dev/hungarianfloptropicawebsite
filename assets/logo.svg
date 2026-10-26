@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#grad)" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Palm tree trunk -->
+  <path d="M50 72 V38" stroke="#78350f" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Palm leaves -->
+  <path d="M50 42 Q35 28 28 35" stroke="#15803d" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M50 40 Q40 22 32 28" stroke="#16a34a" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M50 38 Q50 20 50 22" stroke="#15803d" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M50 40 Q60 22 68 28" stroke="#16a34a" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M50 42 Q65 28 72 35" stroke="#15803d" stroke-width="4" stroke-linecap="round" fill="none"/>
+  
+  <!-- Small Hungarian accent (red-white-green dot) -->
+  <circle cx="72" cy="68" r="8" fill="#dc2626"/>
+  <circle cx="72" cy="68" r="5" fill="#fff"/>
+  <circle cx="72" cy="68" r="2.5" fill="#16a34a"/>
+  
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,46 @@
+/* ============================================
+   Magyar Floptropica – Egyedi stílusok
+   ============================================ */
+
+/* Alap beállítások */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Countdown dobozok */
+.countdown-box {
+  min-width: 68px;
+}
+
+/* Details nyíl forgatás */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Linkek alapértelmezett átmenete */
+a {
+  transition: color 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Gombok hover hatása */
+.btn-primary {
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+}
+
+/* Kártyák hover */
+.service-card {
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+}
