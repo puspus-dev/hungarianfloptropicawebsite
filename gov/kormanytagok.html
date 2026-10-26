@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kormánytagok – Magyar Floptropica</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { lime: { 400: '#a3e635' } },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900">
+
+  <header class="bg-white border-b">
+    <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="../gov.html" class="flex items-center gap-2">
+        <img src="../assets/logo.svg" class="w-8 h-8" alt="Logó">
+        <div class="leading-tight">
+          <div class="font-bold text-sm text-purple-700">Magyar Floptropica</div>
+          <div class="text-[10px] text-gray-500">KORMÁNY</div>
+        </div>
+      </a>
+      <a href="../gov.html" class="text-sm text-gray-500 hover:text-purple-600">Vissza</a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-extrabold mb-2">Kormánytagok</h1>
+    <p class="text-gray-600 mb-10">A Floptropica Kormány tagjai</p>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <article class="bg-white border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <div class="aspect-[4/5] bg-gray-100 overflow-hidden">
+          <img src="../assets/members/Jiafei.png" alt="Jiafei" class="w-full h-full object-cover object-top">
+        </div>
+        <div class="p-5">
+          <p class="text-xs font-semibold text-purple-600 uppercase tracking-wide mb-1">Államelnöki hivatal</p>
+          <h3 class="font-bold text-lg">Jiafei</h3>
+          <p class="text-sm text-gray-600">Floptropica királynője, legfelsőbb rangú</p>
+        </div>
+      </article>
+
+      <article class="bg-white border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <div class="aspect-[4/5] bg-gray-100 overflow-hidden">
+          <img src="../assets/members/FlopDeb.png" alt="Deborah Ali-Williams" class="w-full h-full object-cover object-top">
+        </div>
+        <div class="p-5">
+          <p class="text-xs font-semibold text-pink-600 uppercase tracking-wide mb-1">Államelnöki hivatal</p>
+          <h3 class="font-bold text-lg">Deborah Ali-Williams</h3>
+          <p class="text-sm text-gray-600">Floptropica elnöke</p>
+        </div>
+      </article>
+
+      <article class="bg-white border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <div class="aspect-[4/5] bg-gray-100 overflow-hidden">
+          <img src="../assets/members/government-person-marco.png" alt="Marco Ballarini Sindaco" class="w-full h-full object-cover object-top">
+        </div>
+        <div class="p-5">
+          <p class="text-xs font-semibold text-green-600 uppercase tracking-wide mb-1">Államelnöki hivatal</p>
+          <h3 class="font-bold text-lg">Marco Ballarini Sindaco</h3>
+          <p class="text-sm text-gray-600">Alelnök</p>
+        </div>
+      </article>
+
+      <article class="bg-white border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <div class="aspect-[4/5] bg-gray-100 overflow-hidden">
+          <img src="../assets/members/ShannonDebussy.png" alt="Shannon Debussy" class="w-full h-full object-cover object-top">
+        </div>
+        <div class="p-5">
+          <p class="text-xs font-semibold text-amber-600 uppercase tracking-wide mb-1">Kormánykabinet &amp; Minisztériumok</p>
+          <h3 class="font-bold text-lg">Shannon Debussy</h3>
+          <p class="text-sm text-gray-600">Államtitkár</p>
+        </div>
+      </article>
+
+      <article class="bg-white border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <div class="aspect-[4/5] bg-gray-100 overflow-hidden">
+          <img src="../assets/members/Cupcakke.png" alt="CupCakKe" class="w-full h-full object-cover object-top">
+        </div>
+        <div class="p-5">
+          <p class="text-xs font-semibold text-amber-600 uppercase tracking-wide mb-1">Kormánykabinet &amp; Minisztériumok</p>
+          <h3 class="font-bold text-lg">CupCakKe · Elizabeth Harris</h3>
+          <p class="text-sm text-gray-600">Oktatási Miniszter</p>
+        </div>
+      </article>
+
+      <article class="bg-white border rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <div class="aspect-[4/5] bg-gray-100 overflow-hidden">
+          <img src="../assets/members/sami.png" alt="Sami Kry" class="w-full h-full object-cover object-top">
+        </div>
+        <div class="p-5">
+          <p class="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">Városi Polgármesterek</p>
+          <h3 class="font-bold text-lg">Sami Kry</h3>
+          <p class="text-sm text-gray-600">Khøre Rocks Polgármestere</p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="border-t py-6 text-center text-sm text-gray-500">
+    Magyar Floptropica Kormánya
+  </footer>
+</body>
+</html>
