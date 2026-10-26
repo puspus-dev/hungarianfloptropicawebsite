@@ -4,34 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Magyar Floptropica Kormánya – Hivatalos Oldal</title>
-  <meta name="description" content="A Magyar Floptropica Kormányának hivatalos weboldala. Állampolgárság, FlopID, választások és nemzeti szolgáltatások." />
-
+  <meta name="description" content="A Magyar Floptropica Kormányának hivatalos weboldala." />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            lime: { 400: '#a3e635', 500: '#84cc16' }
-          },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-          }
+          colors: { lime: { 400: '#a3e635', 500: '#84cc16' } },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
         }
       }
     }
   </script>
 </head>
-
 <body class="bg-white text-gray-900">
 
   <div class="bg-lime-400 text-center py-2 text-sm font-medium text-gray-900">
-    A Magyar Floptropica Kormánya üdvözöl téged! 🇭🇺🦩
+    A Magyar Floptropica Kormánya üdvözöl téged!
   </div>
 
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
@@ -41,36 +32,28 @@
           <img src="assets/logo.svg" alt="Magyar Floptropica logó" class="w-9 h-9">
           <span class="font-bold text-lg tracking-tight hidden sm:block">Magyar Floptropica</span>
         </a>
-
         <nav class="hidden md:flex items-center gap-5 text-sm font-medium text-gray-700">
           <a href="index.html" class="text-purple-600 font-semibold">Kezdőlap</a>
-          <a href="gov.html" class="hover:text-purple-600">Gov</a>
+          <a href="gov.html" class="hover:text-purple-600">Kormány</a>
+          <a href="kormanytagok.html" class="hover:text-purple-600">Kormánytagok</a>
           <a href="fiok.html" class="hover:text-purple-600">FlopFiók</a>
           <a href="hirek.html" class="hover:text-purple-600">Hírek</a>
-          <a href="#szolgaltatasok" class="hover:text-purple-600">Szolgáltatások</a>
           <a href="kapcsolat.html" class="hover:text-purple-600">Kapcsolat</a>
         </nav>
-
         <div class="flex items-center gap-3">
-          <a href="fiok.html"
-             class="hidden sm:inline-flex items-center px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold rounded-full">
-            FlopFiók
-          </a>
+          <a href="fiok.html" class="hidden sm:inline-flex items-center px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold rounded-full">FlopFiók</a>
           <button id="mobile-menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Menü">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
           </button>
         </div>
       </div>
-
       <div id="mobile-menu" class="hidden md:hidden pb-4">
         <div class="flex flex-col gap-3 text-sm font-medium">
           <a href="index.html" class="text-purple-600">Kezdőlap</a>
-          <a href="gov.html">Gov</a>
+          <a href="gov.html">Kormány</a>
+          <a href="kormanytagok.html">Kormánytagok</a>
           <a href="fiok.html">FlopFiók</a>
           <a href="hirek.html">Hírek</a>
-          <a href="#szolgaltatasok">Szolgáltatások</a>
           <a href="kapcsolat.html">Kapcsolat</a>
         </div>
       </div>
@@ -81,49 +64,32 @@
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-purple-900 via-pink-800 to-orange-600 opacity-90"></div>
     <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center mix-blend-overlay opacity-40"></div>
-
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center text-white">
-      <p class="text-lime-300 font-semibold tracking-wider uppercase text-sm mb-4">
-        Az internetes nemzet magyar ága
-      </p>
+      <p class="text-lime-300 font-semibold tracking-wider uppercase text-sm mb-4">Az internetes nemzet magyar ága</p>
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
         Üdvözlünk a<br>
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-lime-300 to-pink-300">
-          Magyar Floptropica Kormányának
-        </span><br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-lime-300 to-pink-300">Magyar Floptropica Kormányának</span><br>
         Weboldalán!
       </h1>
       <p class="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10">
-        Trópusi káosz, digitális királyság és főszereplő energia – mindez egy helyen.
-        Csatlakozz a mozgalomhoz.
+        Trópusi káosz, digitális királyság és főszereplő energia – mindez egy helyen. Csatlakozz a mozgalomhoz.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="gov.html"
-           class="inline-flex items-center justify-center px-8 py-3.5 bg-lime-400 hover:bg-lime-300 text-gray-900 font-bold rounded-full shadow-lg">
-          Szavazz most →
-        </a>
-        <a href="#szolgaltatasok"
-           class="inline-flex items-center justify-center px-8 py-3.5 bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white font-semibold rounded-full">
-          Kormányzati szolgáltatások
-        </a>
+        <a href="gov.html" class="inline-flex items-center justify-center px-8 py-3.5 bg-lime-400 hover:bg-lime-300 text-gray-900 font-bold rounded-full shadow-lg">Kormány</a>
+        <a href="#szolgaltatasok" class="inline-flex items-center justify-center px-8 py-3.5 bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white font-semibold rounded-full">Szolgáltatások</a>
       </div>
     </div>
   </section>
 
-  <!-- SZAVAZÁS BANNER -->
-  <section class="bg-purple-700 text-white">
+  <!-- KORMÁNY BANNER -->
+  <section class="bg-purple-800 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
         <div>
-          <p class="text-purple-200 text-sm font-semibold tracking-wide uppercase mb-1">
-            MFNK · 2026 időközi választások
-          </p>
-          <h2 class="text-2xl md:text-3xl font-bold">A szavazás véget ért.</h2>
+          <p class="text-purple-200 text-sm font-semibold tracking-wide uppercase mb-1">Hivatalos kormányzat</p>
+          <h2 class="text-2xl md:text-3xl font-bold">Ismerd meg a kormánytagokat</h2>
         </div>
-        <a href="gov.html"
-           class="inline-flex items-center px-6 py-2.5 bg-lime-400 hover:bg-lime-300 text-gray-900 font-bold rounded-full whitespace-nowrap">
-          Ugrás a szavazásra →
-        </a>
+        <a href="kormanytagok.html" class="inline-flex items-center px-6 py-2.5 bg-lime-400 hover:bg-lime-300 text-gray-900 font-bold rounded-full whitespace-nowrap">Kormánytagok</a>
       </div>
     </div>
   </section>
@@ -133,67 +99,46 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-14">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Kormányzati szolgáltatások</h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-          Minden, amire egy igazi Floptropicai állampolgárnak szüksége van – egy helyen.
-        </p>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Minden, amire egy Floptropicai állampolgárnak szüksége van.</p>
       </div>
-
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
         <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-          <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-2xl mb-4">🪪</div>
-          <h3 class="font-bold text-lg mb-2">Állampolgárság / FlopFiók</h3>
+          <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg mb-2">FlopFiók</h3>
           <p class="text-gray-600 text-sm mb-4">Hozd létre a fiókodat és legyél hivatalos állampolgár.</p>
-          <a href="fiok.html" class="text-purple-600 font-semibold text-sm hover:underline">FlopFiók →</a>
+          <a href="fiok.html" class="text-purple-600 font-semibold text-sm hover:underline">FlopFiók</a>
         </div>
 
         <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-          <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-xl flex items-center justify-center text-2xl mb-4">🆔</div>
+          <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0"/></svg>
+          </div>
           <h3 class="font-bold text-lg mb-2">FlopID</h3>
           <p class="text-gray-600 text-sm mb-4">Generáld le a hivatalos FlopID kártyádat.</p>
-          <a href="flopid.html" class="text-purple-600 font-semibold text-sm hover:underline">Generálás →</a>
+          <a href="flopid.html" class="text-purple-600 font-semibold text-sm hover:underline">Generálás</a>
         </div>
 
         <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-          <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center text-2xl mb-4">🛡️</div>
-          <h3 class="font-bold text-lg mb-2">Biztonság</h3>
-          <p class="text-gray-600 text-sm mb-4">Jelents biztonsági fenyegetéseket a szigetnemzet védelméért.</p>
-          <a href="#" class="text-purple-600 font-semibold text-sm hover:underline">Bejelentés →</a>
-        </div>
-
-        <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-          <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-4">🏢</div>
-          <h3 class="font-bold text-lg mb-2">Vállalkozás regisztráció</h3>
-          <p class="text-gray-600 text-sm mb-4">Regisztrálj céget és generálj hivatalos igazolást.</p>
-          <a href="#" class="text-purple-600 font-semibold text-sm hover:underline">Regisztráció →</a>
-        </div>
-
-        <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-          <div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-2xl mb-4">✈️</div>
+          <div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
           <h3 class="font-bold text-lg mb-2">eÚtlevél</h3>
-          <p class="text-gray-600 text-sm mb-4">Generáld le a hivatalos Magyar Floptropicai eÚtleveledet!</p>
-          <a href="eutlevel.html" class="text-purple-600 font-semibold text-sm hover:underline">Generálás →</a>
+          <p class="text-gray-600 text-sm mb-4">Generáld le a hivatalos eÚtleveledet.</p>
+          <a href="eutlevel.html" class="text-purple-600 font-semibold text-sm hover:underline">Generálás</a>
         </div>
 
         <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-          <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-2xl mb-4">🔍</div>
-          <h3 class="font-bold text-lg mb-2">Cégkereső</h3>
-          <p class="text-gray-600 text-sm mb-4">Keresd és ellenőrizd a bejegyzett vállalkozásokat.</p>
-          <a href="#" class="text-purple-600 font-semibold text-sm hover:underline">Keresés →</a>
+          <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Kormánytagok</h3>
+          <p class="text-gray-600 text-sm mb-4">Ismerd meg a kormány tagjait.</p>
+          <a href="kormanytagok.html" class="text-purple-600 font-semibold text-sm hover:underline">Megtekintés</a>
         </div>
 
-        <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-          <div class="w-12 h-12 bg-yellow-100 text-yellow-600 rounded-xl flex items-center justify-center text-2xl mb-4">🛂</div>
-          <h3 class="font-bold text-lg mb-2">FlopID Személyi</h3>
-          <p class="text-gray-600 text-sm mb-4">Igényelj digitális FlopID Személyi igazolvány kártyát!</p>
-          <a href="flopid.html" class="text-purple-600 font-semibold text-sm hover:underline">Igénylés →</a>
-        </div>
-
-        <div class="service-card bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-          <div class="w-12 h-12 bg-cyan-100 text-cyan-600 rounded-xl flex items-center justify-center text-2xl mb-4">📡</div>
-          <h3 class="font-bold text-lg mb-2">FlopConnect</h3>
-          <p class="text-gray-600 text-sm mb-4">Nagysebességű internet minden állampolgárnak.</p>
-          <a href="#" class="text-purple-600 font-semibold text-sm hover:underline">Részletek →</a>
-        </div>
       </div>
     </div>
   </section>
@@ -210,8 +155,6 @@
           </p>
           <p class="text-gray-600 mb-4 leading-relaxed">
             A <strong>Magyar Floptropica</strong> ennek a mozgalomnak a magyar ága.
-            Célunk, hogy a magyar flopok is hivatalos keretet kapjanak a kultúrájukhoz,
-            humorukhoz és közösségükhöz.
           </p>
           <p class="text-gray-600 leading-relaxed">
             Vezetőnk: a Magyar Floptropica Kormánya.<br>
@@ -231,22 +174,14 @@
     </div>
   </section>
 
-  <!-- HÍREK (rövid előnézet) -->
-  <section id="hirek-preview" class="py-20 bg-gray-50">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+  <!-- HÍREK -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold mb-4">Hírek</h2>
-      <p class="text-gray-600 mb-8">
-        A legfrissebb kormányzati közlemények és bejelentések.
-      </p>
+      <p class="text-gray-600 mb-8">A legfrissebb kormányzati közlemények.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="hirek.html"
-           class="inline-flex items-center justify-center px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full">
-          Összes hír megtekintése →
-        </a>
-        <a href="https://www.tiktok.com/@magyarfloptropicahirek" target="_blank" rel="noopener noreferrer"
-           class="inline-flex items-center justify-center px-6 py-3 bg-gray-900 hover:bg-black text-white font-semibold rounded-full">
-          TikTok: @magyarfloptropicahirek
-        </a>
+        <a href="hirek.html" class="inline-flex items-center justify-center px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full">Összes hír</a>
+        <a href="https://www.tiktok.com/@magyarfloptropicahirek" target="_blank" rel="noopener" class="inline-flex items-center justify-center px-6 py-3 bg-gray-900 hover:bg-black text-white font-semibold rounded-full">TikTok hírek</a>
       </div>
     </div>
   </section>
@@ -257,47 +192,21 @@
       <h2 class="text-3xl font-bold text-center mb-12">Gyakran ismételt kérdések</h2>
       <div class="space-y-4">
         <details class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-          <summary class="font-semibold cursor-pointer flex justify-between items-center">
-            Mi az a Floptropica?
-            <span class="text-purple-600">▼</span>
-          </summary>
-          <p class="mt-3 text-gray-600 text-sm leading-relaxed">
-            A Floptropica egy ikonikus szigetnemzet, amely az internetes kultúrából született.
-            Trópusi káosz, digitális királyság és főszereplő energia – mindez egy helyen.
-          </p>
+          <summary class="font-semibold cursor-pointer flex justify-between items-center">Mi az a Floptropica? <span class="text-purple-600">▼</span></summary>
+          <p class="mt-3 text-gray-600 text-sm leading-relaxed">A Floptropica egy ikonikus szigetnemzet, amely az internetes kultúrából született.</p>
         </details>
         <details class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-          <summary class="font-semibold cursor-pointer flex justify-between items-center">
-            Valódi ország ez?
-            <span class="text-purple-600">▼</span>
-          </summary>
-          <p class="mt-3 text-gray-600 text-sm leading-relaxed">
-            Digitálisan igen. Fizikailag még nem. De a közösség, a kultúra és a hangulat teljesen valós.
-          </p>
+          <summary class="font-semibold cursor-pointer flex justify-between items-center">Valódi ország ez? <span class="text-purple-600">▼</span></summary>
+          <p class="mt-3 text-gray-600 text-sm leading-relaxed">Digitálisan igen. Fizikailag még nem. A közösség és a kultúra viszont valós.</p>
         </details>
         <details class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-          <summary class="font-semibold cursor-pointer flex justify-between items-center">
-            Hogyan lehetek állampolgár?
-            <span class="text-purple-600">▼</span>
-          </summary>
-          <p class="mt-3 text-gray-600 text-sm leading-relaxed">
-            Menj a <a href="fiok.html" class="text-purple-600 underline">FlopFiók</a> oldalra és hozz létre fiókot. Ingyenes.
-          </p>
-        </details>
-        <details class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-          <summary class="font-semibold cursor-pointer flex justify-between items-center">
-            Van saját pénznem?
-            <span class="text-purple-600">▼</span>
-          </summary>
-          <p class="mt-3 text-gray-600 text-sm leading-relaxed">
-            Igen. A hivatalos pénznem a <strong>Flopdollár (FLP)</strong>. Árfolyama: 1 FLP = 1 jó hangulat.
-          </p>
+          <summary class="font-semibold cursor-pointer flex justify-between items-center">Hogyan lehetek állampolgár? <span class="text-purple-600">▼</span></summary>
+          <p class="mt-3 text-gray-600 text-sm leading-relaxed">Menj a <a href="fiok.html" class="text-purple-600 underline">FlopFiók</a> oldalra és hozz létre fiókot.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- LÁBLÉC -->
   <footer class="bg-gray-900 text-gray-300 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-3 gap-8 mb-8">
@@ -306,15 +215,13 @@
             <img src="assets/logo.svg" alt="Logó" class="w-8 h-8">
             <span class="font-bold text-white">Magyar Floptropica</span>
           </div>
-          <p class="text-sm text-gray-400">
-            Az internetes nemzet magyar ága.<br>
-            Slay responsibly.
-          </p>
+          <p class="text-sm text-gray-400">Az internetes nemzet magyar ága.</p>
         </div>
         <div>
           <h4 class="font-semibold text-white mb-3">Gyors linkek</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="gov.html" class="hover:text-white">Szavazás / Gov</a></li>
+            <li><a href="gov.html" class="hover:text-white">Kormány</a></li>
+            <li><a href="kormanytagok.html" class="hover:text-white">Kormánytagok</a></li>
             <li><a href="fiok.html" class="hover:text-white">FlopFiók</a></li>
             <li><a href="hirek.html" class="hover:text-white">Hírek</a></li>
             <li><a href="kapcsolat.html" class="hover:text-white">Kapcsolat</a></li>
@@ -325,12 +232,11 @@
           <ul class="space-y-2 text-sm">
             <li><a href="mailto:magyarflopkormany@gmail.com" class="hover:text-white">magyarflopkormany@gmail.com</a></li>
             <li><a href="https://www.tiktok.com/@magyarflopkormany" target="_blank" class="hover:text-white">TikTok: @magyarflopkormany</a></li>
-            <li class="text-gray-500">Fan / meme projekt</li>
           </ul>
         </div>
       </div>
       <div class="border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
-        © 2026 Magyar Floptropica Kormánya. Minden jog fenntartva (és el is floppolva).
+        © 2026 Magyar Floptropica Kormánya
       </div>
     </div>
   </footer>
@@ -339,11 +245,8 @@
     const menuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     if (menuBtn && mobileMenu) {
-      menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
+      menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
     }
   </script>
-
 </body>
 </html>
