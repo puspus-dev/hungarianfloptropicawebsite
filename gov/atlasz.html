@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atlasz – Magyar Floptropica Választások</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { lime: { 400: '#a3e635' } },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900">
+
+  <header class="bg-white border-b">
+    <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="../gov.html" class="flex items-center gap-2">
+        <img src="../assets/logo.svg" class="w-8 h-8" alt="Logó">
+        <div class="leading-tight">
+          <div class="font-bold text-sm text-purple-700">Magyar Floptropica</div>
+          <div class="text-[10px] text-gray-500">NEMZETI VÁLASZTÁSI BIZOTTSÁG</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-5 text-sm font-medium text-gray-700">
+        <a href="jeloltek.html" class="hover:text-purple-600">Jelöltek</a>
+        <a href="partok.html" class="hover:text-purple-600">Pártok</a>
+        <a href="atlasz.html" class="text-purple-600 font-semibold">Atlasz</a>
+        <a href="eredmenyek.html" class="hover:text-purple-600">Eredmények</a>
+        <a href="hogyan.html" class="hover:text-purple-600">Hogyan szavazz</a>
+      </nav>
+      <a href="../gov.html" class="text-sm text-gray-500 hover:text-purple-600">← Vissza</a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-extrabold mb-2">Választási Atlasz</h1>
+    <p class="text-gray-600 mb-10">A Magyar Floptropica választókerületei. (Demó térkép / lista)</p>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="border rounded-xl p-5 hover:border-purple-300 transition">
+        <h3 class="font-bold">Budapest – Flopkerület</h3>
+        <p class="text-sm text-gray-500 mt-1">Központi régió · 1 képviselő</p>
+      </div>
+      <div class="border rounded-xl p-5 hover:border-purple-300 transition">
+        <h3 class="font-bold">Debrecen – Nagyflop</h3>
+        <p class="text-sm text-gray-500 mt-1">Keleti régió · 1 képviselő</p>
+      </div>
+      <div class="border rounded-xl p-5 hover:border-purple-300 transition">
+        <h3 class="font-bold">Szeged – Tiszapart</h3>
+        <p class="text-sm text-gray-500 mt-1">Déli régió · 1 képviselő</p>
+      </div>
+      <div class="border rounded-xl p-5 hover:border-purple-300 transition">
+        <h3 class="font-bold">Pécs – Mecsekflop</h3>
+        <p class="text-sm text-gray-500 mt-1">Délnyugati régió · 1 képviselő</p>
+      </div>
+      <div class="border rounded-xl p-5 hover:border-purple-300 transition">
+        <h3 class="font-bold">Győr – Dunaflop</h3>
+        <p class="text-sm text-gray-500 mt-1">Nyugati régió · 1 képviselő</p>
+      </div>
+      <div class="border rounded-xl p-5 hover:border-purple-300 transition">
+        <h3 class="font-bold">Külföldi / Egyéb</h3>
+        <p class="text-sm text-gray-500 mt-1">Diaszpóra · 1 képviselő</p>
+      </div>
+    </div>
+
+    <div class="mt-12 p-6 bg-purple-50 rounded-2xl text-sm text-purple-800">
+      <strong>Szerkesztési tipp:</strong> Ide később tehetsz valódi térképet (pl. kép vagy beágyazott térkép), vagy bővítheted a kerületeket.
+    </div>
+  </main>
+
+  <footer class="border-t py-6 text-center text-sm text-gray-500">
+    Magyar Floptropica Nemzeti Választási Bizottság · Demó oldal
+  </footer>
+</body>
+</html>

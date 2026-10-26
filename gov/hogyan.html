@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hogyan szavazz – Magyar Floptropica Választások</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { lime: { 400: '#a3e635' } },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900">
+
+  <header class="bg-white border-b">
+    <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="../gov.html" class="flex items-center gap-2">
+        <img src="../assets/logo.svg" class="w-8 h-8" alt="Logó">
+        <div class="leading-tight">
+          <div class="font-bold text-sm text-purple-700">Magyar Floptropica</div>
+          <div class="text-[10px] text-gray-500">NEMZETI VÁLASZTÁSI BIZOTTSÁG</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-5 text-sm font-medium text-gray-700">
+        <a href="jeloltek.html" class="hover:text-purple-600">Jelöltek</a>
+        <a href="partok.html" class="hover:text-purple-600">Pártok</a>
+        <a href="atlasz.html" class="hover:text-purple-600">Atlasz</a>
+        <a href="eredmenyek.html" class="hover:text-purple-600">Eredmények</a>
+        <a href="hogyan.html" class="text-purple-600 font-semibold">Hogyan szavazz</a>
+      </nav>
+      <a href="../gov.html" class="text-sm text-gray-500 hover:text-purple-600">← Vissza</a>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-extrabold mb-2">Hogyan szavazz?</h1>
+    <p class="text-gray-600 mb-10">Egyszerű útmutató a 2026-os időközi választásokhoz.</p>
+
+    <div class="space-y-8">
+      <div class="flex gap-5">
+        <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold shrink-0">1</div>
+        <div>
+          <h3 class="font-bold text-lg mb-1">Hozz létre FlopFiókot</h3>
+          <p class="text-gray-600 text-sm">Menj a <a href="../fiok.html" class="text-purple-600 underline">FlopFiók</a> oldalra és regisztrálj (vagy jelentkezz be). Ez ad szavazati jogot.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-5">
+        <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold shrink-0">2</div>
+        <div>
+          <h3 class="font-bold text-lg mb-1">Ismerd meg a jelölteket</h3>
+          <p class="text-gray-600 text-sm">Nézd meg a <a href="jeloltek.html" class="text-purple-600 underline">Jelöltek</a> és <a href="partok.html" class="text-purple-600 underline">Pártok</a> oldalakat.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-5">
+        <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold shrink-0">3</div>
+        <div>
+          <h3 class="font-bold text-lg mb-1">Válaszd ki a körzeted</h3>
+          <p class="text-gray-600 text-sm">Az <a href="atlasz.html" class="text-purple-600 underline">Atlasz</a> oldalon megtalálod a választókerületeket.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-5">
+        <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold shrink-0">4</div>
+        <div>
+          <h3 class="font-bold text-lg mb-1">Szavazz</h3>
+          <p class="text-gray-600 text-sm">Menj vissza a <a href="../gov.html" class="text-purple-600 underline">fő szavazási oldalra</a> és add le a szavazatod. Vendégként is lehet (korlátozottan).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 p-6 bg-lime-50 border border-lime-200 rounded-2xl">
+      <h3 class="font-bold mb-2">Fontos tudnivalók</h3>
+      <ul class="text-sm text-gray-700 space-y-1 list-disc list-inside">
+        <li>Egy fiók = egy szavazat</li>
+        <li>A szavazás 2026. november 3. 18:00-ig tart</li>
+        <li>Az eredmények várhatóan 18:30 után jelennek meg</li>
+      </ul>
+    </div>
+
+    <div class="mt-8 p-6 bg-purple-50 rounded-2xl text-sm text-purple-800">
+      <strong>Szerkesztési tipp:</strong> Ezt az útmutatót bármikor bővítheted vagy pontosíthatod.
+    </div>
+  </main>
+
+  <footer class="border-t py-6 text-center text-sm text-gray-500">
+    Magyar Floptropica Nemzeti Választási Bizottság · Demó oldal
+  </footer>
+</body>
+</html>

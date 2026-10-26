@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jelöltek – Magyar Floptropica Választások</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { lime: { 400: '#a3e635' } },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Gov navigáció -->
+  <header class="bg-white border-b">
+    <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="../gov.html" class="flex items-center gap-2">
+        <img src="../assets/logo.svg" class="w-8 h-8" alt="Logó">
+        <div class="leading-tight">
+          <div class="font-bold text-sm text-purple-700">Magyar Floptropica</div>
+          <div class="text-[10px] text-gray-500">NEMZETI VÁLASZTÁSI BIZOTTSÁG</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-5 text-sm font-medium text-gray-700">
+        <a href="jeloltek.html" class="text-purple-600 font-semibold">Jelöltek</a>
+        <a href="partok.html" class="hover:text-purple-600">Pártok</a>
+        <a href="atlasz.html" class="hover:text-purple-600">Atlasz</a>
+        <a href="eredmenyek.html" class="hover:text-purple-600">Eredmények</a>
+        <a href="hogyan.html" class="hover:text-purple-600">Hogyan szavazz</a>
+      </nav>
+      <a href="../gov.html" class="text-sm text-gray-500 hover:text-purple-600">← Vissza</a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-extrabold mb-2">Jelöltek</h1>
+    <p class="text-gray-600 mb-10">A 2026-os időközi választások hivatalos jelöltlistája. (Demó tartalom – szerkeszd nyugodtan!)</p>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Jelölt 1 -->
+      <div class="bg-white border rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center text-2xl mb-4">🦩</div>
+        <h3 class="font-bold text-lg">Flop Anna</h3>
+        <p class="text-sm text-purple-600 font-medium mb-2">Flop Párt</p>
+        <p class="text-sm text-gray-600 mb-4">„Több pálmafa, kevesebb stressz. A trópusi jólét mindenkinek jár.”</p>
+        <div class="text-xs text-gray-400">Budapest – Flopkerület</div>
+      </div>
+
+      <!-- Jelölt 2 -->
+      <div class="bg-white border rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+        <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-2xl mb-4">✨</div>
+        <h3 class="font-bold text-lg">Slay Béla</h3>
+        <p class="text-sm text-pink-600 font-medium mb-2">Slay Szövetség</p>
+        <p class="text-sm text-gray-600 mb-4">„Main character energy minden nap. Emeljük a szintet!”</p>
+        <div class="text-xs text-gray-400">Debrecen – Nagyflop</div>
+      </div>
+
+      <!-- Jelölt 3 -->
+      <div class="bg-white border rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center text-2xl mb-4">🌴</div>
+        <h3 class="font-bold text-lg">Trópusi Kata</h3>
+        <p class="text-sm text-green-600 font-medium mb-2">Trópusi Függetlenek</p>
+        <p class="text-sm text-gray-600 mb-4">„Függetlenül, de együtt. A sziget hangja leszek.”</p>
+        <div class="text-xs text-gray-400">Szeged – Tiszapart</div>
+      </div>
+
+      <!-- Jelölt 4 -->
+      <div class="bg-white border rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center text-2xl mb-4">👑</div>
+        <h3 class="font-bold text-lg">Jiafei Jr.</h3>
+        <p class="text-sm text-yellow-600 font-medium mb-2">Független</p>
+        <p class="text-sm text-gray-600 mb-4">„A hagyomány és a modern flop találkozása.”</p>
+        <div class="text-xs text-gray-400">Pécs – Mecsekflop</div>
+      </div>
+    </div>
+
+    <div class="mt-12 p-6 bg-purple-50 rounded-2xl text-sm text-purple-800">
+      <strong>Szerkesztési tipp:</strong> Ezt az oldalt nyugodtan módosíthatod. Adj hozzá új jelölteket, cseréld a szövegeket, vagy bővítsd a listát.
+    </div>
+  </main>
+
+  <footer class="border-t py-6 text-center text-sm text-gray-500">
+    Magyar Floptropica Nemzeti Választási Bizottság · Demó oldal
+  </footer>
+</body>
+</html>

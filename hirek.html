@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hírek – Magyar Floptropica Kormánya</title>
+  <meta name="description" content="A Magyar Floptropica Kormányának hivatalos hírei." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { lime: { 400: '#a3e635', 500: '#84cc16' } },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Felső sáv -->
+  <div class="bg-lime-400 text-center py-2 text-sm font-medium text-gray-900">
+    A Magyar Floptropica Kormánya üdvözöl téged! 🇭🇺🦩
+  </div>
+
+  <!-- Navigáció -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <img src="assets/logo.svg" alt="Logó" class="w-9 h-9">
+          <span class="font-bold text-lg tracking-tight hidden sm:block">Magyar Floptropica</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-5 text-sm font-medium text-gray-700">
+          <a href="index.html" class="hover:text-purple-600">Kezdőlap</a>
+          <a href="gov.html" class="hover:text-purple-600">Szavazás / Gov</a>
+          <a href="fiok.html" class="hover:text-purple-600">FlopFiók</a>
+          <a href="hirek.html" class="text-purple-600 font-semibold">Hírek</a>
+          <a href="kapcsolat.html" class="hover:text-purple-600">Kapcsolat</a>
+        </nav>
+
+        <a href="index.html" class="text-sm text-gray-600 hover:text-purple-600 md:hidden">← Vissza</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-purple-600 to-pink-600 text-white py-14 md:py-18">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h1 class="text-3xl md:text-4xl font-extrabold mb-3">Hírek</h1>
+      <p class="text-white/90">
+        A Magyar Floptropica Kormányának hivatalos közleményei és hírei.
+      </p>
+    </div>
+  </section>
+
+  <!-- Hírek lista -->
+  <section class="py-14">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+
+      <!-- ============================================================
+           ÚJ HÍR HOZZÁADÁSA:
+           1. Másold ki az alábbi <article> ... </article> blokkot
+           2. Illeszd be a lista tetejére (ez alá)
+           3. Írd át a dátumot, címet és a szöveget
+           ============================================================ -->
+
+      <!-- HÍR 1 -->
+      <article class="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition">
+        <div class="flex items-center gap-3 text-sm text-gray-500 mb-3">
+          <time datetime="2026-10-26">2026. október 26.</time>
+          <span class="px-2 py-0.5 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">Kormányzat</span>
+        </div>
+        <h2 class="text-xl font-bold mb-3">Elindult a hivatalos weboldal</h2>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+          Örömmel jelentjük, hogy elindult a Magyar Floptropica Kormányának hivatalos weboldala.
+          Mostantól elérhető a FlopFiók, a FlopID és az eÚtlevél generálás, valamint a szavazási felület.
+        </p>
+        <a href="index.html" class="text-purple-600 text-sm font-semibold hover:underline">Tovább →</a>
+      </article>
+
+      <!-- HÍR 2 -->
+      <article class="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition">
+        <div class="flex items-center gap-3 text-sm text-gray-500 mb-3">
+          <time datetime="2026-10-24">2026. október 24.</time>
+          <span class="px-2 py-0.5 bg-pink-100 text-pink-700 rounded-full text-xs font-medium">Választás</span>
+        </div>
+        <h2 class="text-xl font-bold mb-3">Megnyílt a 2026-os időközi választás</h2>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+          A szavazás hivatalosan megnyílt. Minden állampolgár leadhatja a szavazatát
+          a gov oldalon. A szavazás 2026. november 3-án zárul.
+        </p>
+        <a href="gov.html" class="text-purple-600 text-sm font-semibold hover:underline">Szavazok →</a>
+      </article>
+
+      <!-- HÍR 3 -->
+      <article class="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition">
+        <div class="flex items-center gap-3 text-sm text-gray-500 mb-3">
+          <time datetime="2026-10-20">2026. október 20.</time>
+          <span class="px-2 py-0.5 bg-green-100 text-green-700 rounded-full text-xs font-medium">Közösség</span>
+        </div>
+        <h2 class="text-xl font-bold mb-3">TikTok csatorna elindult</h2>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+          Kövesd a Magyar Floptropica Hírek™ hivatalos TikTok oldalát a legfrissebb
+          tartalmakért és kormányzati bejelentésekért.
+        </p>
+        <a href="https://www.tiktok.com/@magyarfloptropicahirek" target="_blank" rel="noopener noreferrer"
+           class="text-purple-600 text-sm font-semibold hover:underline">
+          @magyarfloptropicahirek →
+        </a>
+      </article>
+
+      <!-- 
+        ========================================
+        PÉLDA – ÚJ HÍR SABLON (ezt másold):
+        ========================================
+
+      <article class="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition">
+        <div class="flex items-center gap-3 text-sm text-gray-500 mb-3">
+          <time datetime="2026-11-01">2026. november 1.</time>
+          <span class="px-2 py-0.5 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">Kategória</span>
+        </div>
+        <h2 class="text-xl font-bold mb-3">A hír címe ide</h2>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+          A hír szövege ide jön. Írhatsz akár több bekezdést is.
+        </p>
+        <a href="#" class="text-purple-600 text-sm font-semibold hover:underline">Tovább →</a>
+      </article>
+
+      -->
+
+    </div>
+  </section>
+
+  <!-- TikTok figyelemfelhívás -->
+  <section class="pb-16">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="bg-gray-50 rounded-2xl p-6 text-center text-sm text-gray-600">
+        A legfrissebb videós hírek a 
+        <a href="https://www.tiktok.com/@magyarfloptropicahirek" target="_blank" class="text-purple-600 font-semibold hover:underline">
+          @magyarfloptropicahirek
+        </a> 
+        TikTok oldalon vannak.
+      </div>
+    </div>
+  </section>
+
+  <!-- Lábléc -->
+  <footer class="bg-gray-900 text-gray-300 py-10">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <div class="flex items-center justify-center gap-2 mb-4">
+        <img src="assets/logo.svg" alt="Logó" class="w-7 h-7">
+        <span class="font-semibold text-white">Magyar Floptropica</span>
+      </div>
+      <p class="text-sm text-gray-500 mb-2">
+        <a href="index.html" class="hover:text-white">← Vissza a főoldalra</a>
+      </p>
+      <p class="text-xs text-gray-600">© 2026 Magyar Floptropica Kormánya · Fan / meme projekt</p>
+    </div>
+  </footer>
+
+</body>
+</html>

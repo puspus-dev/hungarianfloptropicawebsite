@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kapcsolat – Magyar Floptropica Kormánya</title>
+  <meta name="description" content="Lépj kapcsolatba a Magyar Floptropica Kormányával." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lime: { 400: '#a3e635', 500: '#84cc16' }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Felső üdvözlő sáv -->
+  <div class="bg-lime-400 text-center py-2 text-sm font-medium text-gray-900">
+    A Magyar Floptropica Kormánya üdvözöl téged! 🇭🇺🦩
+  </div>
+
+  <!-- Navigáció -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <img src="assets/logo.svg" alt="Magyar Floptropica logó" class="w-9 h-9">
+          <span class="font-bold text-lg tracking-tight hidden sm:block">Magyar Floptropica</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-5 text-sm font-medium text-gray-700">
+          <a href="index.html" class="hover:text-purple-600">Kezdőlap</a>
+          <a href="gov.html" class="hover:text-purple-600">Szavazás / Gov</a>
+          <a href="fiok.html" class="hover:text-purple-600">FlopFiók</a>
+          <a href="kapcsolat.html" class="text-purple-600 font-semibold">Kapcsolat</a>
+        </nav>
+
+        <a href="index.html" class="text-sm text-gray-600 hover:text-purple-600 md:hidden">← Vissza</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-purple-600 to-pink-600 text-white py-16 md:py-20">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-4">Kapcsolat</h1>
+      <p class="text-lg text-white/90">
+        Írj nekünk, kövess minket, vagy csak köszönj be a Magyar Floptropica Kormányánál.
+      </p>
+    </div>
+  </section>
+
+  <!-- Kapcsolati lehetőségek -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 gap-8">
+
+        <!-- Email -->
+        <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition text-center">
+          <div class="w-16 h-16 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-5">
+            ✉️
+          </div>
+          <h2 class="text-xl font-bold mb-2">E-mail</h2>
+          <p class="text-gray-600 text-sm mb-5">
+            Hivatalos megkeresések, javaslatok, kérdés – ide írj bátran.
+          </p>
+          <a href="mailto:magyarflopkormany@gmail.com"
+             class="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-full transition">
+            magyarflopkormany@gmail.com
+          </a>
+        </div>
+
+        <!-- TikTok -->
+        <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition text-center">
+          <div class="w-16 h-16 bg-pink-100 text-pink-600 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-5">
+            🎵
+          </div>
+          <h2 class="text-xl font-bold mb-2">TikTok</h2>
+          <p class="text-gray-600 text-sm mb-5">
+            Kövess minket a legfrissebb flop hírekért és kormányzati tartalmakért.
+          </p>
+          <a href="https://www.tiktok.com/@magyarflopkormany" target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 hover:bg-black text-white font-semibold rounded-full transition">
+            @magyarflopkormany
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Extra infó -->
+      <div class="mt-12 bg-gray-50 rounded-2xl p-8 text-center">
+        <h3 class="font-bold text-lg mb-3">Egyéb tudnivalók</h3>
+        <p class="text-gray-600 text-sm max-w-xl mx-auto leading-relaxed">
+          A Magyar Floptropica Kormánya egy fan / meme projekt.
+          Az e-mail címre érkező leveleket igyekszünk megválaszolni, de nem hivatalos állami szerv vagyunk.
+          Slay responsibly. 🇭🇺🦩
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lábléc -->
+  <footer class="bg-gray-900 text-gray-300 py-10">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <div class="flex items-center justify-center gap-2 mb-4">
+        <img src="assets/logo.svg" alt="Logó" class="w-7 h-7">
+        <span class="font-semibold text-white">Magyar Floptropica</span>
+      </div>
+      <p class="text-sm text-gray-500 mb-2">
+        <a href="index.html" class="hover:text-white">← Vissza a főoldalra</a>
+      </p>
+      <p class="text-xs text-gray-600">© 2026 Magyar Floptropica Kormánya · Fan / meme projekt</p>
+    </div>
+  </footer>
+
+</body>
+</html>

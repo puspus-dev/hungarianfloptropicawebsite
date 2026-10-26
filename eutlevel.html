@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eÚtlevél Generálás – Magyar Floptropica</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { lime: { 400: '#a3e635' } },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    .passport-card {
+      background: linear-gradient(160deg, #1e3a5f 0%, #0f172a 100%);
+      aspect-ratio: 1.4 / 1;
+      max-width: 440px;
+      border: 3px solid #c9a227;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen">
+
+  <div class="bg-lime-400 text-center py-2 text-sm font-medium">A Magyar Floptropica Kormánya üdvözöl téged! 🇭🇺🦩</div>
+
+  <header class="bg-white border-b sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="assets/logo.svg" class="w-8 h-8" alt="Logó">
+        <span class="font-bold hidden sm:inline">Magyar Floptropica</span>
+      </a>
+      <nav class="flex gap-4 text-sm font-medium">
+        <a href="fiok.html" class="hover:text-purple-600">FlopFiók</a>
+        <a href="flopid.html" class="hover:text-purple-600">FlopID</a>
+        <a href="eutlevel.html" class="text-purple-600 font-semibold">eÚtlevél</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-10">
+
+    <div id="not-logged" class="hidden text-center py-16">
+      <h1 class="text-2xl font-bold mb-3">Bejelentkezés szükséges</h1>
+      <p class="text-gray-600 mb-6">eÚtlevél generálásához először hozz létre egy FlopFiókot.</p>
+      <a href="fiok.html" class="inline-block px-6 py-3 bg-purple-600 text-white font-semibold rounded-full">Ugrás a FlopFiókhoz →</a>
+    </div>
+
+    <div id="logged-in" class="hidden">
+      <div class="text-center mb-10">
+        <h1 class="text-3xl font-extrabold mb-2">eÚtlevél</h1>
+        <p class="text-gray-600">Digitális útlevél a Magyar Floptropica állampolgárainak.</p>
+      </div>
+
+      <div class="flex justify-center mb-8">
+        <button id="generate-btn" class="px-8 py-3 bg-blue-700 hover:bg-blue-800 text-white font-bold rounded-full shadow-lg">
+          eÚtlevél generálása
+        </button>
+      </div>
+
+      <!-- Útlevél kártya -->
+      <div id="card-container" class="hidden flex justify-center">
+        <div class="passport-card rounded-xl shadow-2xl p-5 text-white w-full relative overflow-hidden">
+          <!-- Díszítő elemek -->
+          <div class="absolute top-0 right-0 w-32 h-32 bg-yellow-500/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+          
+          <div class="relative z-10">
+            <!-- Fejléc -->
+            <div class="flex items-start justify-between mb-5">
+              <div>
+                <div class="text-[10px] tracking-widest text-yellow-400/80 uppercase">Magyar Floptropica</div>
+                <div class="text-lg font-bold tracking-wide">eÚTLEVÉL / ePASSPORT</div>
+              </div>
+              <img src="assets/logo.svg" class="w-10 h-10 brightness-0 invert opacity-80" alt="">
+            </div>
+
+            <div class="flex gap-5">
+              <!-- Foto hely -->
+              <div class="w-24 h-28 bg-white/10 border border-yellow-500/30 rounded flex items-center justify-center text-4xl shrink-0">
+                🦩
+              </div>
+
+              <div class="flex-1 space-y-2 text-sm">
+                <div>
+                  <div class="text-[10px] text-yellow-400/70 uppercase">Típus / Type</div>
+                  <div class="font-semibold">P – Digitális</div>
+                </div>
+                <div>
+                  <div class="text-[10px] text-yellow-400/70 uppercase">Útlevélszám / Passport No.</div>
+                  <div class="font-mono font-bold text-base" id="pass-number">—</div>
+                </div>
+                <div>
+                  <div class="text-[10px] text-yellow-400/70 uppercase">Név / Name</div>
+                  <div class="font-bold" id="pass-name">—</div>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <div>
+                    <div class="text-[10px] text-yellow-400/70 uppercase">Állampolgárság</div>
+                    <div class="text-xs" id="pass-nationality">—</div>
+                  </div>
+                  <div>
+                    <div class="text-[10px] text-yellow-400/70 uppercase">Érvényes</div>
+                    <div class="text-xs" id="pass-valid">—</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-yellow-500/20 flex justify-between text-[10px] text-yellow-400/60">
+              <span>Kiadva: <span id="pass-issued">—</span></span>
+              <span>MF • PASSPORT AUTHORITY</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p id="already-msg" class="hidden text-center text-sm text-green-600 mt-4 font-medium"></p>
+
+      <div class="text-center mt-8">
+        <a href="fiok.html" class="text-sm text-purple-600 hover:underline">← Vissza a FlopFiókhoz</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script>
+    function formatDate(iso) {
+      return new Date(iso).toLocaleDateString('hu-HU');
+    }
+
+    function showCard(user, passport) {
+      document.getElementById('pass-name').textContent = user.name.toUpperCase();
+      document.getElementById('pass-number').textContent = passport.number;
+      document.getElementById('pass-nationality').textContent = passport.nationality;
+      document.getElementById('pass-valid').textContent = formatDate(passport.validUntil);
+      document.getElementById('pass-issued').textContent = formatDate(passport.issuedAt);
+      document.getElementById('card-container').classList.remove('hidden');
+    }
+
+    function init() {
+      const user = getCurrentUser();
+      if (!user) {
+        document.getElementById('not-logged').classList.remove('hidden');
+        return;
+      }
+
+      document.getElementById('logged-in').classList.remove('hidden');
+
+      if (user.passport) {
+        showCard(user, user.passport);
+        document.getElementById('generate-btn').textContent = 'eÚtlevél megtekintése';
+        document.getElementById('already-msg').textContent = '✓ Az eÚtleveled már létezik és érvényes.';
+        document.getElementById('already-msg').classList.remove('hidden');
+      }
+
+      document.getElementById('generate-btn').addEventListener('click', () => {
+        const result = generatePassport();
+        if (result.success) {
+          const updatedUser = getCurrentUser();
+          showCard(updatedUser, result.passport);
+          document.getElementById('generate-btn').textContent = 'eÚtlevél megtekintése';
+          if (!result.alreadyExists) {
+            document.getElementById('already-msg').textContent = '✓ eÚtlevél sikeresen generálva!';
+            document.getElementById('already-msg').classList.remove('hidden');
+          }
+        } else {
+          alert(result.error);
+        }
+      });
+    }
+
+    init();
+  </script>
+</body>
+</html>
